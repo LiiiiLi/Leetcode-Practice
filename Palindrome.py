@@ -140,8 +140,9 @@ class Solution(object):
         # 思路：
         # 首先，第一遍遍历是肯定不能省的。有没有可能一次多匹配几个字串？
         for i in range(len(words)):
-
-        return list
+            pass
+        # return list
+        return 0
 s = Solution()
 # str = "abbb"
 # str = "aacecaaa"
