@@ -109,26 +109,7 @@ class Solution(object):
 #                 lr = 0
 #                 i += 1
 
-def list_to_tree(nums):
-    if not nums:
-        return None
 
-    nodes = [TreeNode(x) if x is not None else None for x in nums]
-    root = nodes[0]
-
-    current_parent_index = 0
-    current_parent = nodes[current_parent_index]
-
-    for i in range(1, len(nodes)):
-        if nodes[i] is not None:
-            if i % 2 == 1:
-                current_parent.left = nodes[i]
-            else:
-                current_parent.right = nodes[i]
-                current_parent_index += 1
-                current_parent = nodes[current_parent_index]
-
-    return root
 
 # list = [7,4,3,None,None,6,19]
 list = [1,None,1,None,None,1,None]

@@ -40,7 +40,7 @@ class Solution(object):
             start = max(i - len(res) - 1, 0)
             # print("i=",i ,"len(res)=", len(res) ,"start=",start,"\nres=",res)
             temp = s[start:i + 1]
-            print("temp",temp)
+            print("temp", temp)
             if temp == temp[::-1]:
                 res = temp
             else:
@@ -49,7 +49,6 @@ class Solution(object):
                 if temp == temp[::-1]:
                     res = temp
         return res
-
 
     def shortestFnBPalindrome(self, s):
         """
@@ -120,29 +119,7 @@ class Solution(object):
 
         return s
 
-    def palindromePairs(self, words):
-        """
-        :type words: List[str]
-        :rtype: List[List[int]]
-        """
-        # 思路：分别匹配每个字串，然后判断是否是回文
-        # i 在前，j 在后
-        # =============== 复杂度太高，不能用 ================
-        # list = []
-        # for i in range(len(words)):
-        #     for j in range(len(words)):
-        #         if i != j:
-        #             tmp = words[i]+words[j]
-        #             if tmp == tmp[::-1]:
-        #                 list.append([i,j])
-        # ==================================================
 
-        # 思路：
-        # 首先，第一遍遍历是肯定不能省的。有没有可能一次多匹配几个字串？
-        for i in range(len(words)):
-            pass
-        # return list
-        return 0
 s = Solution()
 # str = "abbb"
 # str = "aacecaaa"
@@ -153,5 +130,5 @@ s = Solution()
 # words = ["abcd","dcba","lls","s","sssll"]
 # words = ["bat","tab","cat"]
 words = ["a",""]
-ans = s.palindromePairs(words)
-print("The original string is:",words,"\n the answer is",ans)
+# ans = s.palindromePairs(words)
+# print("The original string is:",words,"\n the answer is",ans)
